@@ -1,0 +1,408 @@
+// ●------Reset----●
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+// ●------Reset----●
+
+//------------Variables------------
+@import "Vars";
+//------------Variables------------
+
+.Container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(127, 255, 212, 0);
+    display: grid;
+    grid-template-areas: 
+    " Container__row1"
+    " Container__row2"
+    " Container__row3";
+    grid-template-rows: 80px 920px 80px;
+
+    .Container__row1{
+        grid-area: Container__row1;
+        background-color: rgb(3, 155, 243);
+
+        .row1__LogoHeader{
+            height: 75px;
+            width: 300px;
+            background-image: url("../IMG/LogoHeader.png");
+            background-color: rgba(255, 0, 0, 0);
+            position: relative;
+            left: 10px;
+            top: 2px;
+        }
+    }
+
+    .Container__row2{
+        grid-area: Container__row2;
+        background-image: linear-gradient(to bottom, rgb(219, 219, 219) 50%, rgba(62, 104, 241, 0.582));
+        display: flex;
+        justify-content: center;
+
+
+    //############################    
+    // ========== 𝐅𝐨𝐫𝐦 ==========
+    //############################  
+        .Container__Form{
+            height: 800px; 
+            width: 430px;
+            border-radius: 30px;
+            background-color: rgba(83, 83, 83, 0.322);
+            display: grid;
+            grid-template-areas: 
+            " Form__Row1"
+            " Form__Row2"
+            " Form__Row3"
+            " Form__Row4"
+            " Form__Row5"
+            " Form__Row6";
+            grid-template-rows: 1fr 1fr 1fr 2fr 2fr 1fr;
+            margin-top: 65px;
+
+        //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟏 ==========
+            .Form__Row1{
+                grid-area: Form__Row1;
+                background-color: map-get($Form, Row1);
+                @include TopBorders;
+
+                .Row1__TitleForm{
+                    @include TitleForm;
+                    @include FontTitle;
+                }
+
+                .Row1__SectionForm{
+                    @include SectionForms;
+
+                    #text1{
+                        @include Text;
+                        @include FontText;
+                    }
+                }
+            }
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟏 ==========
+
+
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟐 ==========
+            .Form__Row2{
+                grid-area: Form__Row2;
+                background-color: map-get($Form, Row2);
+
+                .Row2__TitleForm{
+                    @include TitleForm;
+                    @include FontTitle;
+                }
+
+                .Row2__SectionForm{
+                    @include SectionForms;
+
+                    #text2{
+                        @include Text;
+                        @include FontText;
+                    }
+                }
+            }
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟐 ==========
+
+
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟑 ==========
+            .Form__Row3{
+                grid-area: Form__Row3;
+                background-color: map-get($Form, Row1);
+
+                .Row3__TitleForm{
+                    @include TitleForm;
+                    @include FontTitle;
+                }
+
+                .Row3__SectionForm{
+                    @include SectionForms;
+
+                    #text3{
+                        @include Text;
+                        @include FontText;
+                    }
+                }
+            }
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟑 ==========
+
+
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟒 ==========
+            .Form__Row4{
+                grid-area: Form__Row4;
+                background-color: map-get($Form, Row2);
+
+                .Row4__TitleForm{
+                    @include TitleForm;
+                    @include FontTitle;
+                }
+
+                .Row4__SectionForm{
+                    @include SectionForms2;
+                    display: grid;
+                    grid-template-areas: 
+                    " SectionForm__Fraction1"
+                    " SectionForm__Fraction2"
+                    " SectionForm__Fraction3";
+                    grid-template-rows: 1fr 1fr 1fr;
+
+                    .SectionForm__Fraction1{
+                        grid-area: SectionForm__Fraction1;
+                        background-color: map-get($Form, Fraction1);
+                        @include TopBordersFractions;
+
+                        #textFraction1{
+                            @include TextF;
+                            @include FontText;
+                        }
+                    }
+
+                    .SectionForm__Fraction2{
+                        grid-area: SectionForm__Fraction2;
+                        background-color: map-get($Form, Fraction2);
+                        border: solid rgb(7, 7, 7);
+                        border-width: 3px 0px 3px 0px;
+
+                        #textFraction2{
+                            @include TextF;
+                            @include FontText;
+                        }
+                    }
+
+                    .SectionForm__Fraction3{
+                        grid-area: SectionForm__Fraction3;
+                        background-color: map-get($Form, Fraction1);
+                        @include BottomBordersFractions;
+
+                        #textFraction3{
+                            @include TextF;
+                            @include FontText;
+                        }
+                    }
+                }
+            }
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟒 ==========
+
+
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟓 ==========
+            .Form__Row5{
+                grid-area: Form__Row5;
+                background-color: map-get($Form, Row1);
+
+                .Row5__TitleForm{
+                    @include TitleForm;
+                    @include FontTitle;
+                }
+
+                .Row5__SectionForm{
+                    @include SectionForms3;
+                    display: grid;
+                    grid-template-areas: 
+                    " SectionForm__Fraction4"
+                    " SectionForm__Fraction5"
+                    " SectionForm__Fraction6"
+                    " SectionForm__Fraction7";
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+                    //---------- Fraction4 ----------
+                    .SectionForm__Fraction4{
+                        grid-area: SectionForm__Fraction4;
+                        background-color: map-get($Form, Fraction1);
+                        @include TopBordersFractions;
+                        display: grid;
+                        grid-template-areas: 
+                        " Fraction4__Moiety1 Fraction4__Moiety2";
+                        grid-template-columns: 1fr 1fr;
+
+                        .Fraction4__Moiety1{
+                            grid-area: Fraction4__Moiety1;
+                            background-color: map-get($Form, Moiety1);
+
+                            #textFraction4{
+                                @include TextF;
+                                @include FontText;
+                            }
+                        }
+
+                        .Fraction4__Moiety2{
+                            grid-area: Fraction4__Moiety2;
+                            background-color: map-get($Form, Moiety2);
+
+                            #textPriceFraction1{
+                                @include TextPrice;
+                                @include FontText;
+                            }
+                        }
+                    }
+                    //---------- Fraction4 ----------
+
+
+                    //---------- Fraction5 ----------
+                    .SectionForm__Fraction5{
+                        grid-area: SectionForm__Fraction5;
+                        background-color: map-get($Form, Fraction2);
+                        display: grid;
+                        grid-template-areas: 
+                        " Fraction5__Moiety1 Fraction5__Moiety2";
+                        grid-template-columns: 1fr 1fr;
+                        border: solid rgb(7, 7, 7);
+                        border-width: 3px 0px 3px 0px;
+
+                        .Fraction5__Moiety1{
+                            grid-area: Fraction5__Moiety1;
+                            background-color: map-get($Form, Moiety3);
+
+                            #textFraction5{
+                                @include TextF;
+                                @include FontText;
+                            }
+                        }
+
+                        .Fraction5__Moiety2{
+                            grid-area: Fraction5__Moiety2;
+                            background-color: map-get($Form, Moiety4);
+
+                            #textPriceFraction2{
+                                @include TextPrice;
+                                @include FontText;
+                            }
+                        }
+                    }
+                    //---------- Fraction5 ----------
+
+
+                    //---------- Fraction6 ----------
+                    .SectionForm__Fraction6{
+                        grid-area: SectionForm__Fraction6;
+                        background-color: map-get($Form, Fraction1);
+                        display: grid;
+                        grid-template-areas: 
+                        " Fraction6__Moiety1 Fraction6__Moiety2";
+                        grid-template-columns: 1fr 1fr;
+                        border: solid rgb(7, 7, 7);
+                        border-width: 0px 0px 3px 0px;
+
+                        .Fraction6__Moiety1{
+                            grid-area: Fraction6__Moiety1;
+                            background-color: map-get($Form, Moiety1);
+
+                            #textFraction6{
+                                @include TextF;
+                                @include FontText;
+                            }
+                        }
+
+                        .Fraction6__Moiety2{
+                            grid-area: Fraction6__Moiety2;
+                            background-color: map-get($Form, Moiety2);
+
+                            #textPriceFraction3{
+                                @include TextPrice;
+                                @include FontText;
+                            }
+                        }
+                    }
+                    //---------- Fraction6 ----------
+
+
+                    //---------- Fraction7 ----------
+                    .SectionForm__Fraction7{
+                        grid-area: SectionForm__Fraction7;
+                        background-color: map-get($Form, Fraction2);
+                        @include BottomBordersFractions;
+                        display: grid;
+                        grid-template-areas: 
+                        " Fraction7__Moiety1 Fraction7__Moiety2";
+                        grid-template-columns: 1fr 1fr;
+
+                        .Fraction7__Moiety1{
+                            grid-area: Fraction7__Moiety1;
+                            background-color: map-get($Form, Moiety3);
+
+                            .textFraction7{
+                                font-family: "FontP";
+                                font-size: 23px;
+                                font-weight: 20px;
+                                margin-top: 5px;
+                                margin-left: 5px;
+                                -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+                            }
+                        }
+
+                        .Fraction7__Moiety2{
+                            grid-area: Fraction7__Moiety2;
+                            background-color: map-get($Form, Moiety4);
+
+                            #textPriceFraction4{
+                                @include TextPrice;
+                                @include FontText;
+                            }
+                        }
+                    }
+                    //---------- Fraction6 ----------
+                }
+            }
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟓 ==========
+
+
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟔 ==========
+            .Form__Row6{
+                grid-area: Form__Row6;
+                background-color: map-get($Form, Row2);
+                @include BottomBorders;
+
+                .Row6__ContainerFlex{
+                    display: flex;
+                    justify-content: center;
+
+                .ContainerFlex__Button{
+                    height: 70px;
+                    width: 180px;
+                    border-radius: 50px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    background-color: map-get($Form, Button);
+                    transition: all 1s;
+
+                    .Button__TextButton{
+                        color: rgb(0, 0, 0);
+                        @include FontTitle;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+
+                .ContainerFlex__Button:hover{
+                    height: 70px;
+                    width: 180px;
+                    border-radius: 50px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    background-color: map-get($Form, ButtonHover);
+                }
+            }
+            }
+            //========== 𝐅𝐨𝐫𝐦𝐑𝐨𝐰𝟔 ==========
+        }
+        //############################  
+        // ========== 𝐅𝐨𝐫𝐦 ==========
+        //############################  
+    }
+
+    .Container__row3{
+        grid-area: Container__row3;
+        background-color: rgb(0, 0, 0);
+
+        .row1__LogoFooter{
+            height: 75px;
+            width: 400px;
+            background-image: url("../IMG/LogoFooter.png");
+            background-color: rgba(255, 0, 0, 0);
+            position: relative;
+            left: 10px;
+            top: 2px;
+        }
+    }
+}

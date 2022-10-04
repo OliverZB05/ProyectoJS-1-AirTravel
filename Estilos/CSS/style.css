@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "FontT";
+  src: url("../Fonts/TangoSans_Italic.ttf"); }
+
+@font-face {
+  font-family: "FontP";
+  src: url("../Fonts/RomanSerif.ttf"); }
+
+.Container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(127, 255, 212, 0);
+  display: grid;
+  grid-template-areas: " Container__row1" " Container__row2" " Container__row3";
+  grid-template-rows: 80px 920px 80px; }
+  .Container .Container__row1 {
+    grid-area: Container__row1;
+    background-color: #039bf3; }
+    .Container .Container__row1 .row1__LogoHeader {
+      height: 75px;
+      width: 300px;
+      background-image: url("../IMG/LogoHeader.png");
+      background-color: rgba(255, 0, 0, 0);
+      position: relative;
+      left: 10px;
+      top: 2px; }
+  .Container .Container__row2 {
+    grid-area: Container__row2;
+    background-image: linear-gradient(to bottom, #dbdbdb 50%, rgba(62, 104, 241, 0.582));
+    display: flex;
+    justify-content: center; }
+    .Container .Container__row2 .Container__Form {
+      height: 800px;
+      width: 430px;
+      border-radius: 30px;
+      background-color: rgba(83, 83, 83, 0.322);
+      display: grid;
+      grid-template-areas: " Form__Row1" " Form__Row2" " Form__Row3" " Form__Row4" " Form__Row5" " Form__Row6";
+      grid-template-rows: 1fr 1fr 1fr 2fr 2fr 1fr;
+      margin-top: 65px; }
+      .Container .Container__row2 .Container__Form .Form__Row1 {
+        grid-area: Form__Row1;
+        background-color: rgba(0, 255, 255, 0);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; }
+        .Container .Container__row2 .Container__Form .Form__Row1 .Row1__TitleForm {
+          font-size: 25px;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-family: "FontT";
+          font-size: 23px; }
+        .Container .Container__row2 .Container__Form .Form__Row1 .Row1__SectionForm {
+          height: 35px;
+          width: 300px;
+          margin-top: 5px;
+          margin-left: 15px;
+          border: 3px solid black;
+          border-radius: 20px;
+          background-color: #cecece; }
+          .Container .Container__row2 .Container__Form .Form__Row1 .Row1__SectionForm #text1 {
+            margin-left: 5px;
+            font-family: "FontP";
+            font-size: 15px; }
+      .Container .Container__row2 .Container__Form .Form__Row2 {
+        grid-area: Form__Row2;
+        background-color: rgba(0, 110, 255, 0); }
+        .Container .Container__row2 .Container__Form .Form__Row2 .Row2__TitleForm {
+          font-size: 25px;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-family: "FontT";
+          font-size: 23px; }
+        .Container .Container__row2 .Container__Form .Form__Row2 .Row2__SectionForm {
+          height: 35px;
+          width: 300px;
+          margin-top: 5px;
+          margin-left: 15px;
+          border: 3px solid black;
+          border-radius: 20px;
+          background-color: #cecece; }
+          .Container .Container__row2 .Container__Form .Form__Row2 .Row2__SectionForm #text2 {
+            margin-left: 5px;
+            font-family: "FontP";
+            font-size: 15px; }
+      .Container .Container__row2 .Container__Form .Form__Row3 {
+        grid-area: Form__Row3;
+        background-color: rgba(0, 255, 255, 0); }
+        .Container .Container__row2 .Container__Form .Form__Row3 .Row3__TitleForm {
+          font-size: 25px;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-family: "FontT";
+          font-size: 23px; }
+        .Container .Container__row2 .Container__Form .Form__Row3 .Row3__SectionForm {
+          height: 35px;
+          width: 300px;
+          margin-top: 5px;
+          margin-left: 15px;
+          border: 3px solid black;
+          border-radius: 20px;
+          background-color: #cecece; }
+          .Container .Container__row2 .Container__Form .Form__Row3 .Row3__SectionForm #text3 {
+            margin-left: 5px;
+            font-family: "FontP";
+            font-size: 15px; }
+      .Container .Container__row2 .Container__Form .Form__Row4 {
+        grid-area: Form__Row4;
+        background-color: rgba(0, 110, 255, 0); }
+        .Container .Container__row2 .Container__Form .Form__Row4 .Row4__TitleForm {
+          font-size: 25px;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-family: "FontT";
+          font-size: 23px; }
+        .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm {
+          height: 130px;
+          width: 400px;
+          margin-top: 5px;
+          margin-left: 15px;
+          border: 3px solid black;
+          border-radius: 20px;
+          background-color: #cecece;
+          display: grid;
+          grid-template-areas: " SectionForm__Fraction1" " SectionForm__Fraction2" " SectionForm__Fraction3";
+          grid-template-rows: 1fr 1fr 1fr; }
+          .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm .SectionForm__Fraction1 {
+            grid-area: SectionForm__Fraction1;
+            background-color: rgba(119, 119, 119, 0);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px; }
+            .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm .SectionForm__Fraction1 #textFraction1 {
+              margin-left: 5px;
+              margin-top: 6px;
+              font-family: "FontP";
+              font-size: 15px; }
+          .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm .SectionForm__Fraction2 {
+            grid-area: SectionForm__Fraction2;
+            background-color: #a5a4a4;
+            border: solid #070707;
+            border-width: 3px 0px 3px 0px; }
+            .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm .SectionForm__Fraction2 #textFraction2 {
+              margin-left: 5px;
+              margin-top: 6px;
+              font-family: "FontP";
+              font-size: 15px; }
+          .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm .SectionForm__Fraction3 {
+            grid-area: SectionForm__Fraction3;
+            background-color: rgba(119, 119, 119, 0);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px; }
+            .Container .Container__row2 .Container__Form .Form__Row4 .Row4__SectionForm .SectionForm__Fraction3 #textFraction3 {
+              margin-left: 5px;
+              margin-top: 6px;
+              font-family: "FontP";
+              font-size: 15px; }
+      .Container .Container__row2 .Container__Form .Form__Row5 {
+        grid-area: Form__Row5;
+        background-color: rgba(0, 255, 255, 0); }
+        .Container .Container__row2 .Container__Form .Form__Row5 .Row5__TitleForm {
+          font-size: 25px;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-family: "FontT";
+          font-size: 23px; }
+        .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm {
+          height: 170px;
+          width: 400px;
+          margin-top: 5px;
+          margin-left: 15px;
+          border: 3px solid black;
+          border-radius: 20px;
+          background-color: #cecece;
+          display: grid;
+          grid-template-areas: " SectionForm__Fraction4" " SectionForm__Fraction5" " SectionForm__Fraction6" " SectionForm__Fraction7";
+          grid-template-rows: 1fr 1fr 1fr 1fr; }
+          .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction4 {
+            grid-area: SectionForm__Fraction4;
+            background-color: rgba(119, 119, 119, 0);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            display: grid;
+            grid-template-areas: " Fraction4__Moiety1 Fraction4__Moiety2";
+            grid-template-columns: 1fr 1fr; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction4 .Fraction4__Moiety1 {
+              grid-area: Fraction4__Moiety1;
+              background-color: rgba(245, 114, 114, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction4 .Fraction4__Moiety1 #textFraction4 {
+                margin-left: 5px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction4 .Fraction4__Moiety2 {
+              grid-area: Fraction4__Moiety2;
+              background-color: rgba(228, 47, 47, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction4 .Fraction4__Moiety2 #textPriceFraction1 {
+                margin-left: 140px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+          .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction5 {
+            grid-area: SectionForm__Fraction5;
+            background-color: #a5a4a4;
+            display: grid;
+            grid-template-areas: " Fraction5__Moiety1 Fraction5__Moiety2";
+            grid-template-columns: 1fr 1fr;
+            border: solid #070707;
+            border-width: 3px 0px 3px 0px; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction5 .Fraction5__Moiety1 {
+              grid-area: Fraction5__Moiety1;
+              background-color: rgba(170, 248, 96, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction5 .Fraction5__Moiety1 #textFraction5 {
+                margin-left: 5px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction5 .Fraction5__Moiety2 {
+              grid-area: Fraction5__Moiety2;
+              background-color: rgba(39, 187, 25, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction5 .Fraction5__Moiety2 #textPriceFraction2 {
+                margin-left: 140px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+          .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction6 {
+            grid-area: SectionForm__Fraction6;
+            background-color: rgba(119, 119, 119, 0);
+            display: grid;
+            grid-template-areas: " Fraction6__Moiety1 Fraction6__Moiety2";
+            grid-template-columns: 1fr 1fr;
+            border: solid #070707;
+            border-width: 0px 0px 3px 0px; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction6 .Fraction6__Moiety1 {
+              grid-area: Fraction6__Moiety1;
+              background-color: rgba(245, 114, 114, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction6 .Fraction6__Moiety1 #textFraction6 {
+                margin-left: 5px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction6 .Fraction6__Moiety2 {
+              grid-area: Fraction6__Moiety2;
+              background-color: rgba(228, 47, 47, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction6 .Fraction6__Moiety2 #textPriceFraction3 {
+                margin-left: 140px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+          .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction7 {
+            grid-area: SectionForm__Fraction7;
+            background-color: #a5a4a4;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: grid;
+            grid-template-areas: " Fraction7__Moiety1 Fraction7__Moiety2";
+            grid-template-columns: 1fr 1fr; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction7 .Fraction7__Moiety1 {
+              grid-area: Fraction7__Moiety1;
+              background-color: rgba(170, 248, 96, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction7 .Fraction7__Moiety1 .textFraction7 {
+                font-family: "FontP";
+                font-size: 23px;
+                font-weight: 20px;
+                margin-top: 5px;
+                margin-left: 5px;
+                -webkit-text-stroke: 0.5px black; }
+            .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction7 .Fraction7__Moiety2 {
+              grid-area: Fraction7__Moiety2;
+              background-color: rgba(39, 187, 25, 0); }
+              .Container .Container__row2 .Container__Form .Form__Row5 .Row5__SectionForm .SectionForm__Fraction7 .Fraction7__Moiety2 #textPriceFraction4 {
+                margin-left: 140px;
+                margin-top: 6px;
+                font-family: "FontP";
+                font-size: 15px; }
+      .Container .Container__row2 .Container__Form .Form__Row6 {
+        grid-area: Form__Row6;
+        background-color: rgba(0, 110, 255, 0);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px; }
+        .Container .Container__row2 .Container__Form .Form__Row6 .Row6__ContainerFlex {
+          display: flex;
+          justify-content: center; }
+          .Container .Container__row2 .Container__Form .Form__Row6 .Row6__ContainerFlex .ContainerFlex__Button {
+            height: 70px;
+            width: 180px;
+            border-radius: 50px;
+            margin-top: 15px;
+            cursor: pointer;
+            background-color: #1bfa07;
+            transition: all 1s; }
+            .Container .Container__row2 .Container__Form .Form__Row6 .Row6__ContainerFlex .ContainerFlex__Button .Button__TextButton {
+              color: black;
+              font-family: "FontT";
+              font-size: 23px;
+              font-size: 18px;
+              font-weight: bold; }
+          .Container .Container__row2 .Container__Form .Form__Row6 .Row6__ContainerFlex .ContainerFlex__Button:hover {
+            height: 70px;
+            width: 180px;
+            border-radius: 50px;
+            margin-top: 15px;
+            cursor: pointer;
+            background-color: #0dd317; }
+  .Container .Container__row3 {
+    grid-area: Container__row3;
+    background-color: black; }
+    .Container .Container__row3 .row1__LogoFooter {
+      height: 75px;
+      width: 400px;
+      background-image: url("../IMG/LogoFooter.png");
+      background-color: rgba(255, 0, 0, 0);
+      position: relative;
+      left: 10px;
+      top: 2px; }

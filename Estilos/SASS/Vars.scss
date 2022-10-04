@@ -1,0 +1,111 @@
+// ========== 𝐅𝐨𝐧𝐭-𝐟𝐚𝐜𝐞 ==========
+@font-face {
+    font-family: "FontT";
+    src: url("../Fonts/TangoSans_Italic.ttf");
+}
+
+@font-face {
+    font-family: "FontP";
+    src: url("../Fonts/RomanSerif.ttf");
+}
+// ========== 𝐅𝐨𝐧𝐭-𝐟𝐚𝐜𝐞 ==========
+
+
+// ========== 𝐌𝐢𝐱𝐢𝐧𝐬 ==========
+@mixin TopBorders{  
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+@mixin BottomBorders{   
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+@mixin TopBordersFractions{  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@mixin BottomBordersFractions{   
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@mixin TitleForm{    
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+@mixin SectionForms{    
+    height: 35px;
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+@mixin SectionForms2{    
+    height: 130px;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+@mixin SectionForms3{   
+    height: 170px;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+
+@mixin Text{    
+    margin-left: 5px;
+}
+
+@mixin TextF{   
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+@mixin TextPrice{   
+    margin-left: 140px;
+    margin-top: 6px;
+}
+
+@mixin FontTitle{   
+    font-family: "FontT";
+    font-size: 23px;
+}
+
+@mixin FontText{  
+    font-family: "FontP";
+    font-size: 15px;
+}
+// ========== 𝐌𝐢𝐱𝐢𝐧𝐬 ==========
+
+
+// ========== 𝐌𝐚𝐩𝐬 ==========
+$Form:(   
+    Row1: rgba(0, 255, 255, 0), 
+    Row2: rgba(0, 110, 255, 0), 
+    Fraction1: rgba(119, 119, 119, 0), 
+    Fraction2: rgb(165, 164, 164), 
+    Moiety1: rgba(245, 114, 114, 0), 
+    Moiety2: rgba(228, 47, 47, 0), 
+    Moiety3: rgba(170, 248, 96, 0), 
+    Moiety4: rgba(39, 187, 25, 0), 
+    Button: rgb(27, 250, 7), 
+    ButtonHover: rgb(13, 211, 23) 
+);
+// ========== 𝐌𝐚𝐩𝐬 ==========
